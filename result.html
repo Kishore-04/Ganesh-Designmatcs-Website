@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="Func()">
+    
+    <img src="../Ganesh_Designmatics/images/img1.jpg" alt="Im1">
+   <script>
+        function Func()  {
+        fetch("./info.json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => 
+          {
+            console.log(data)
+            {tasks.map(task => <img src={task.image} key={task.id}></img> )}
+          }
+          
+          );
+        }
+        //res.map(Func())
+        
+    </script>
+</body>
+</html>
